@@ -1,6 +1,10 @@
 # HackerRank Solutions in Java
+This repository contains my current solutions for
+the challenges of [HackerRank](https://www.hackerrank.com/)
 
-My solutions for the challenges of HackerRank.
+Be aware that i try to stick as closely as possible to the
+code provided by the authors of the challenges. That means the code is 
+often not conform to the code conventions.
 
 ## Overview
 What has been solved so far:
