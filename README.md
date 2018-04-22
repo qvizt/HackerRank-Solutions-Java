@@ -11,8 +11,8 @@ What has been solved so far:
 
 |Domain|Status|
 |---|---|
-|[30 Days of Code](30%20Days%20of%20Code)|Day 08 done|
-|[Java](Java)|52 of 64 solved|
+|[30 Days of Code](30%20Days%20of%20Code)|Day 09 done|
+|[Java](Java)|58 of 64 solved|
 
 ## Miscellaneous
 Solutions are written using Java 8 and Eclipse Oxygen.
