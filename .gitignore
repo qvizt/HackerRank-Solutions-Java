@@ -3,6 +3,8 @@
 
 # ... except ...
 !.gitignore
+!README.md
 !/Java
 !/Java/*
-!README.md
+!/SQL
+!/SQL/*
