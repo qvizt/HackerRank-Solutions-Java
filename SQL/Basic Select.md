@@ -1,5 +1,5 @@
 # Basic Select Solutions
-Solutions for challenges found in SQL's subdomain Basic Select.
+Solutions for challenges in SQL's subdomain Basic Select.
 
 #### Revising the Select Query I
 ```SQL
