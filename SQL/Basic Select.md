@@ -1,7 +1,7 @@
 # Basic Select Solutions
 Solutions for challenges found in SQL's subdomain Basic Select.
 
-####Revising the Select Query I
+#### Revising the Select Query I
 ```SQL
 SELECT    *
   FROM    city
@@ -9,7 +9,7 @@ SELECT    *
    AND    population > 100000;
 ```
 
-####Revising the Select Query II
+#### Revising the Select Query II
 ```SQL
 SELECT    name 
   FROM    city
@@ -17,20 +17,20 @@ SELECT    name
    AND    countrycode = 'USA';
 ```
 
-####Select All
+#### Select All
 ```SQL
 SELECT    * 
   FROM    CITY;
 ```
 
-####Select By ID
+#### Select By ID
 ```SQL
 SELECT    *
   FROM    city
  WHERE    ID = 1661;
 ```
 
-####Japanese Cities' Attributes
+#### Japanese Cities' Attributes
 ```SQL
 SELECT    *
   FROM    city
