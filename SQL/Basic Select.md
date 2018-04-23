@@ -68,16 +68,16 @@ SELECT    COUNT(city) - COUNT(DISTINCT city)
 SELECT    *
   FROM    (
           SELECT    city, LENGTH(city)
-	        FROM    station
-	       ORDER BY LENGTH(city) ASC, city ASC
+            FROM    station
+           ORDER BY LENGTH(city) ASC, city ASC
 		  )
  WHERE    ROWNUM = 1
  UNION
 SELECT    *
   FROM    (
           SELECT    city, LENGTH(city)
-		    FROM    station
-		   ORDER BY LENGTH(city) DESC, city ASC
+            FROM    station
+           ORDER BY LENGTH(city) DESC, city ASC
 		  )
  WHERE    ROWNUM = 1 ;
 ```
