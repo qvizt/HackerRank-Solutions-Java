@@ -1,26 +1,15 @@
 # HackerRank Solutions in Java
-This repository contains my current solutions for
-the challenges of [HackerRank](https://www.hackerrank.com/).
-
-Be aware that i try to stick as closely as possible to the
-code provided by the authors of the challenges. That means the code is 
-often not conform to the code conventions.
+This repository contains my code to solve the challenges of [HackerRank](https://www.hackerrank.com/).
 
 ## Overview
-What has been solved so far:
+Summary about the languages and the domains. Click on a language's name to visit the corresponding
+README with a more detailed overview for that language.
 
-|Domain|Status|
-|---|---|
-|[30 Days of Code](30%20Days%20of%20Code)|Day 09 done|
-|[Java](Java)|Complete|
+[**Java (In Progress)**](/Java)
+* 30 Days of Code (Tutorials)
+* Java (Language Proficiency)
 
-## Miscellaneous
-Solutions are written using Java 8 and Eclipse Oxygen.
-
-The usage of  Eclipse helps to format the code in a more
-readable manner and the code completion via the content assist
-is way better than the editor of the website.
+[**SQL (In Progress, Not linked)**]()
 
 ## Contact
-Question? Found an error? Or something else?
-Feel free to contact me via qvizt@wtnet.de
+Question? Found an error? Or something else? Feel free to contact me via qvizt@wtnet.de
