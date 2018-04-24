@@ -8,7 +8,9 @@ Click on the name of a subdomain to visit the corresponding Markdown file that c
 
 |Subdomain|Status|
 |--------|--------|
-|[Basic Select](Basic%20Select.md)|5 Solutions|
+|[Basic Select](Basic%20Select.md)|Complete|
+|[Advanced Select](Advanced%20Select.md)|Complete|
+|[Aggregation](Aggregation.md)|Complete|
 
 ## Contact
 Question? Found an error? Or something else? Feel free to contact me via qvizt@wtnet.de

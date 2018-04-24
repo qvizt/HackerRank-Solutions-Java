@@ -5,13 +5,13 @@ Solutions for challenges in SQL's subdomain Basic Select.
 ```SQL
 SELECT    *
   FROM    city
- WHERE    countrycode = 'USA' 
+ WHERE    countrycode = 'USA'
    AND    population > 100000;
 ```
 
 #### Revising the Select Query II
 ```SQL
-SELECT    name 
+SELECT    name
   FROM    city
  WHERE    population > 120000
    AND    countrycode = 'USA';
@@ -19,7 +19,7 @@ SELECT    name
 
 #### Select All
 ```SQL
-SELECT    * 
+SELECT    *
   FROM    CITY;
 ```
 
