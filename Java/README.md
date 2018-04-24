@@ -8,14 +8,13 @@ What has been done so far.
 
 |Domain|Status|
 |---|---|
-|[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Day 10 done|
+|[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Day 11 done|
 |[Java (Language Proficiency)](Java)|Complete|
 
 ## Miscellaneous
 Solutions are written using Java 8 and Eclipse Oxygen.
 
-The usage of  Eclipse helps to format the code in a more readable manner and the code completion via content assist
-is way better than the one provided by HackerRank.
+Eclipse is used to improve the readability of the code via proper formatting and its code completion is way better than the one provided by HackerRank.
 
 ## Contact
 Question? Found an error? Or something else? Feel free to contact me via qvizt@wtnet.de

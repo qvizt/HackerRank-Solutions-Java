@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
- * Solution for Day 8: Dictionaries and Maps
+ * Solution for Day 8: Dictionaries and Maps.
  */
 public class Solution {
 
