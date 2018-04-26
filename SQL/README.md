@@ -12,6 +12,7 @@ Click on the name of a subdomain to visit the corresponding Markdown file that c
 |[Advanced Select](Advanced%20Select.md)|Complete|
 |[Aggregation](Aggregation.md)|Complete|
 |[Basic Join](Basic%20Join.md)|Complete|
+|[Advanced Join](Advanced%20Join.md)|Complete|
 
 ## Contact
 Question? Found an error? Or something else? Feel free to contact me via qvizt@wtnet.de
