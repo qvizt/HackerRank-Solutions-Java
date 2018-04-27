@@ -91,37 +91,43 @@ SELECT    con.contest_id, con.hacker_id, con.name, SUM(sum_sub), SUM(sum_total),
 #### 15 Days of Learning SQL ( WIP )
 This one solves the challenge and one is currently WIP and might be replaced later with an shorter version.
 ```SQL
-SELECT sub_date, maxCount, shacker_id, hackers.name FROM(
-SELECT date_cons_count.sub_date, date_max_count.day_max,  date_cons_count.maxCount, MIN(hcks.hacker_id) AS shacker_id FROM (SELECT overview.sub_date AS sub_date, COUNT(overview.sub_hid) AS maxCount FROM
-    (SELECT sub_date, sub_hid, MAX(cons) AS cons
-    FROM(
-        SELECT CONNECT_BY_ROOT sub_date AS sub_date, sub_hid AS sub_hid, sub_count AS sub_count, LEVEL AS cons
-        FROM
-        (
-            SELECT submission_date AS sub_date, hacker_id AS sub_hid, count(*) AS sub_count
-            FROM submissions
-            GROUP by submission_date, hacker_id
-        )
-        CONNECT BY PRIOR sub_date > sub_date AND PRIOR sub_hid = sub_hid
-    )
-    GROUP BY sub_date, sub_hid, sub_count ORDER BY sub_hid ASC, sub_date ASC
-    ) overview
-JOIN 
-    (SELECT sub_date, ROWNUM AS rnum FROM (
-        SELECT DISTINCT submission_date AS sub_date
-        FROM submissions ORDER BY sub_date ASC)) dayRank ON overview.sub_date = dayRank.sub_date  AND overview.cons = dayRank.rnum
-GROUP BY overview.sub_date ORDER BY overview.sub_date ASC)
-date_cons_count
-JOIN (
-SELECT submission_date, MAX(sub_count) day_max FROM (
-SELECT submission_date, COUNT(submission_id) sub_count
-FROM submissions GROUP BY submission_date, hacker_id)
-GROUP BY submission_date ORDER BY submission_date ASC)
-date_max_count ON date_cons_count.sub_date = date_max_count.submission_date
-JOIN 
-(SELECT submission_date, COUNT(submission_id) sub_count, hacker_id
-    FROM submissions GROUP BY submission_date, hacker_id) hcks
-    ON date_max_count.day_max = hcks.sub_count AND  date_max_count.submission_date = hcks.submission_date
-GROUP BY date_cons_count.sub_date, date_max_count.day_max,  date_cons_count.maxCount)
-JOIN hackers ON shacker_id = hacker_id ORDER BY sub_date ASC;
+SELECT    *
+  FROM    (
+          SELECT    submission_date, COUNT(DISTINCT hacker_id) AS cons_hacker_count
+            FROM    (
+                    SELECT    CONNECT_BY_ROOT submission_date AS root_date, hacker_id, submission_date
+                      FROM    submissions
+                   CONNECT BY (TO_DATE(submission_date, 'YYYY-MM-DD') - TO_DATE(PRIOR submission_date, 'YYYY-MM-DD')) = 1
+                       AND    PRIOR hacker_id = hacker_id
+                    )
+           WHERE    root_date = (
+                                SELECT    MIN(submission_date)
+                                  FROM    submissions
+                                )
+           GROUP BY submission_date
+          ) report
+          NATURAL JOIN
+          (
+          SELECT  submission_date, hacker_id, name
+            FROM (
+                 SELECT    submission_date, MIN(hacker_id) AS hacker_id
+                   FROM    (
+                           SELECT    submission_date, COUNT(submission_id) AS sub_count, hacker_id
+                             FROM    submissions outer_submissions
+                            GROUP BY submission_date, hacker_id
+                           HAVING COUNT(submission_id) = (
+                                                         SELECT    MAX(sub_count)
+                                                           FROM    (
+                                                                   SELECT    submission_date, COUNT(submission_id) AS sub_count
+                                                                     FROM    submissions
+                                                                    GROUP BY submission_date, hacker_id
+                                                                   )
+                                                          GROUP BY submission_date HAVING submission_date = outer_submissions.submission_date
+                                                         )
+                           )
+                  GROUP BY submission_date, sub_count
+                 )
+                 NATURAL JOIN hackers
+          )
+ ORDER BY submission_date ASC;
 ```
