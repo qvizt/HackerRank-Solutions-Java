@@ -89,7 +89,6 @@ SELECT    con.contest_id, con.hacker_id, con.name, SUM(sum_sub), SUM(sum_total),
 ```
 
 #### 15 Days of Learning SQL ( WIP )
-This one solves the challenge and one is currently WIP and might be replaced later with an shorter version.
 ```SQL
 SELECT    *
   FROM    (
