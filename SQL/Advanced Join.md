@@ -88,7 +88,7 @@ Alternative solution with NVL(expression, 0):
                        FROM submission_stats
                    GROUP BY challenge_id
                    ) sub ON cha.challenge_id = sub.chal_id
- WHERE    (NVL(sum_views, 0) + NVL(sum_unique_views, 0) + NVL(sum_sub, 0) + NVL(sum_total_acc, 0)) > 0
+   WHERE (NVL(sum_views, 0) + NVL(sum_unique_views, 0) + NVL(sum_sub, 0) + NVL(sum_total_acc, 0)) > 0
 GROUP BY con.contest_id, con.hacker_id, con.name
 ORDER BY con.contest_id ASC;
 ```

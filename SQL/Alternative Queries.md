@@ -20,7 +20,7 @@ CONNECT BY LEVEL <= 20;
 ```SQL
 WITH numbers AS (
                     SELECT LEVEL AS nr
-                      FROM dual
+                      FROM DUAL
                      WHERE LEVEL > 1
                 CONNECT BY LEVEL <= 1000
                 )

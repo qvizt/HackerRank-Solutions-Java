@@ -100,10 +100,10 @@ ORDER BY chal_count DESC, hckrs.hacker_id ASC;
 
 #### Contest Leaderboard
 ```SQL
-  SELECT hackers.hacker_id, hackers.name, SUM(max_score) sum_max_score
+  SELECT hackers.hacker_id, hackers.name, SUM(max_score) AS sum_max_score
     FROM hackers
          JOIN (
-                SELECT hacker_id, MAX(score) max_score
+                SELECT hacker_id, MAX(score) AS max_score
                   FROM submissions
                  WHERE score > 0
               GROUP BY hacker_id, challenge_id

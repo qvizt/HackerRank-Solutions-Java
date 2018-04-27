@@ -60,7 +60,8 @@ ORDER BY row_nr;
                 WHEN n IN (
                           SELECT p
                             FROM bst
-                           WHERE p IS NOT NULL)
+                           WHERE p IS NOT NULL
+                          )
                 THEN 'Inner'
                 WHEN n NOT IN (
                               SELECT p

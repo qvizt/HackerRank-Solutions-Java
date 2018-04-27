@@ -84,7 +84,7 @@ SELECT *
 
 #### Weather Observation Station 6
 ```SQL
-SELECT DISTINCT(city)
+SELECT DISTINCT city
   FROM station
  WHERE SUBSTR(city, 1, 1) IN ('A', 'E', 'I', 'O', 'U');
 ```

@@ -144,7 +144,7 @@ SELECT ROUND(MEDIAN(lat_n), 4)
   FROM station;
 ```
 
-Alternative without built-in function:
+Alternative solution without built-in function:
 ```SQL
 SELECT ROUND(lat_n, 4)
   FROM (
