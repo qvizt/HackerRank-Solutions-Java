@@ -3,7 +3,7 @@ package qvizt;
 import java.util.Scanner;
 
 /**
- * Solution for Day 6: Let's Review.
+ * Solution for Day 7: Arrays.
  */
 public class Solution {
 

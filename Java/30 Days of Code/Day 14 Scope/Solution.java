@@ -3,6 +3,7 @@ package qvizt;
 import java.util.Scanner;
 
 class Difference {
+
     private int[] elements;
     public int maximumDifference;
 
