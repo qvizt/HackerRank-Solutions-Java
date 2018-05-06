@@ -8,7 +8,7 @@ What has been done so far.
 
 |Domain|Status|
 |---|---|
-|[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Day 19 done|
+|[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Day 23 done|
 |[Java (Language Proficiency)](Java)|Complete|
 
 ## Miscellaneous
