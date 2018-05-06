@@ -6,6 +6,7 @@ Summary about the languages and the domains. Click on a language's name to visit
 directory that has a README with a more detailed overview for that language.
 
 [**Java (In Progress)**](/Java)
+* 10 Days of Statistics(Tutorials)
 * 30 Days of Code (Tutorials)
 * Java (Language Proficiency)
 
