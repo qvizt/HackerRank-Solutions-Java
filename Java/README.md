@@ -8,8 +8,8 @@ What has been done so far.
 
 |Domain|Status|
 |---|---|
-|[10 Days of Statistics (Tutorials)](10%20Days%20of%20Statistics)|Day 00 done|
-|[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Day 23 done|
+|[10 Days of Statistics (Tutorials)](10%20Days%20of%20Statistics)|Day 01 done|
+|[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Day 24 done|
 |[Java (Language Proficiency)](Java)|Complete|
 
 ## Miscellaneous
