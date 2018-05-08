@@ -1,0 +1,48 @@
+Solution for Day 2: Compound Event Probability
+==============================================
+No Java, just simple usage of the human brain.
+
+Abbreviations:
+r = red
+b = black
+
+1) Break down the probabilities for each urn
+
+X
+    4r + 3b = 7 balls
+    r = 4 / 7
+    b = 3 / 7
+
+Y
+    5r + 4b = 9 balls
+    r = 5 / 9
+    b = 4 / 9
+
+Z
+    4r + 4b = 8 balls
+    r = 4 / 8 = 1 / 2
+    b = 4 / 8 = 1 / 2
+
+2) Find all combinations that results in 2r and 1b
+
+urn       X  Y  Z
+
+draw (1)  b  r  r
+     (2)  r  b  r
+     (3)  r  r  b
+
+3) Calculate the probabilities for the draws in 2)
+
+The events are independent! Use multiplication for the
+probability of each draw.
+
+draw (1) (3/7) * (5/9) * (1/2) = 15/126
+
+draw (2) (4/7) * (4/9) * (1/2) = 16/126
+
+draw (3) (4/7) * (5/9) * (1/2) = 20/126
+
+4) Add the probabilities and calculate the result
+
+=> (15/126) + (16/126) + (20/126) = 51 / 126 = 17 / 42
+   ===================================================

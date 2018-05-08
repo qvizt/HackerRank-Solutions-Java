@@ -1,0 +1,21 @@
+Solution for Day 2: More Dice
+=============================
+No Java, just simple usage of the human brain.
+
+A dice has 6 sides, thus resulting in 6 different outcomes:
+{ 1, 2, 3, 4, 5, 6 }
+
+
+Two dices have 36 different outcomes:
+{ Sides of dice one } x { Sides of dice two }
+=> { (1, 1), (1, 2) ... (5, 6), (6, 5), (6, 6) }
+
+
+Now count all outcomes that result in a sum equal 6
+and x is not equal y in (x, y):
+{ (1, 5), (2, 4), (4, 2), (5, 1) }
+=> Number of all favorable outcomes is 4
+
+Now the fraction and the result:
+=> 4 / 36 = 1 / 9
+   ===============
