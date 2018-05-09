@@ -1,0 +1,26 @@
+Solution for Day 3: Conditional Probability
+=============================
+No Java, just simple usage of the human brain.
+
+Abbreviations:
+b = boy
+g = girl
+
+1) Collect all possible outcomes
+
+Two choices and two genders leading to:
+{ bb, bg, gb, gg }
+
+2) Elimination of impossible outcome
+
+The family already has a boy, so the
+outcome gg is not possible. 
+
+This leads to the possible outcomes:
+{ bb, bg, gb }
+
+3) Result
+
+One of three possible outcomes is bb,
+so the probability is 1 / 3
+                      =====

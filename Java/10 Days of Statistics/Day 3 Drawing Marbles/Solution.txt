@@ -1,0 +1,20 @@
+Solution for Day 3: Drawing Marbles
+=============================
+No Java, just simple usage of the human brain.
+
+Abbreviations:
+r = red
+b = blue
+
+1) First draw (already done in description of the task)
+
+3r + 4b = 7 marbles
+
+One red marble is picked, so 6 marbles are left: 
+2r + 4b = 6 
+
+2) Second draw
+
+4 of the 6 marbles left are blue. So the result is
+4/6 = 2/3
+=========

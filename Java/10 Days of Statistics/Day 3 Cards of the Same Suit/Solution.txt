@@ -1,0 +1,22 @@
+Solution for Day 3: Cards of the Same Suit
+=============================
+No Java, just simple usage of the human brain.
+
+52 card deck and 4 suits leading to 13 cards per suite.
+
+1) First card
+
+After drawing the first card the number of cards is
+reduced to 51. The related suite (to the drawn card)
+has 12 cards left.
+
+2) Second card
+
+Based on the observation in 1) we get the result:
+
+12 cards that have the same suite like the first card
+divided by
+51 cards left
+
+= 12/51 = 4/17
+  =====   ====
