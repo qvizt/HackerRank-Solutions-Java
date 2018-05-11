@@ -8,6 +8,8 @@ import java.util.LinkedHashSet;
  * 
  * 10.05.2018 - Currently not possible to finish this solution due errors on
  * HackerRanks side.
+ * 
+ * 11.05.2018 - Still not possible to finish this solution.
  */
 public class Solution {
 
