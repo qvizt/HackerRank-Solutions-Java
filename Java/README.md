@@ -9,7 +9,7 @@ What has been done so far.
 |Domain|Status|
 |---|---|
 |[10 Days of Statistics (Tutorials)](10%20Days%20of%20Statistics)|Day 06 done|
-|[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Day 29 done <br>Day 27 currently not possible to solve|
+|[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Complete|
 |[Java (Language Proficiency)](Java)|Complete|
 
 ## Miscellaneous
