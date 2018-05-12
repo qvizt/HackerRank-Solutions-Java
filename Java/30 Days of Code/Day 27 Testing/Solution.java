@@ -10,6 +10,8 @@ import java.util.LinkedHashSet;
  * HackerRanks side.
  * 
  * 11.05.2018 - Still not possible to finish this solution.
+ *
+ * 12.05.2018 - Still not possible to finish this solution.
  */
 public class Solution {
 
