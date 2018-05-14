@@ -1,0 +1,103 @@
+Solution for Day 8: Pearson Correlation Coefficient II
+=============================
+No Java, just simple usage of the human brain.
+
+Part 1: y on x as Y = b * X + a
+
+3x + 4y + 8 = 0    | -4y
+
+3x + 8 = -4y       | :(-4)
+
+(3/-4)x - 2 = y
+
+convert to fit the formula
+
+b = (3/-4)
+x = X
+a = -2
+y = Y
+
+Y = (3/-4) * X - 2
+===================
+
+Part 2: x on y as X = b * Y + a
+
+4x + 3y + 7 = 0    | -4x
+
+3y + 7 = -4x       | :(-4)
+
+(3/-4)y - (7/4) = x
+
+convert to fit the formula
+
+b = (3/-4)
+x = X
+a = (7/-4)
+y = Y
+
+X = (3/-4) * Y - (7/4)
+===================
+
+Part 3: Solve for coefficient
+
+b can be written as b = pearson * (std dev y / std dev x)
+
+Apply this to the results of Part 1 and 2
+
+b from Part 1 is b1
+b from Part 2 is b2
+
+b1 can be written as b1 = pearson * (std dev y / std dev x)
+
+b2 can be written as b2 = pearson * (std dev x / std dev y)
+
+Notice that the std dev switched their places based on x on y  or y on x
+
+Rearrange the formulas so pearson is alone on one side of the equation
+
+For b1
+
+(3/-4) = pearson * (std dev y / std dev x)   | :(std dev y/ std dev x)
+
+(3/-4) / (std dev y / std dev x) = pearson 	
+
+For b2
+
+(3/-4) = pearson * (std dev x / std dev y)   | :(std dev x/ std dev y)
+
+(3/-4) / (std dev x / std dev y) = pearson 	
+
+Now multiply b1 and b2 to get pearson^2 (multiply to remove the unknown std devs)
+
+Changing the formatting for a better overview
+
+
+  (3/-4)      *      (3/-4)
+----------------------------- = pearson * pearson   | cancel the denominator in the big fraction
+(std dev y)       (std dev x)
+-----------   *   -----------
+(std dev x)       (std dev y)
+
+
+
+  (3/-4)      *      (3/-4)
+----------------------------- = pearson * pearson   | Rewrite
+     1                 1
+-----------   *   -----------
+     1                 1
+
+
+
+(3/-4) * (3/-4) = pearson * pearson    | multiply out
+
+9/16 = pearson^2    | square root 
+
+solution 1 =>  3/4 = pearson
+solution 2 => -3/4 = pearson
+
+The solution that is correct is solution 2, because b1 and b2 are negative and
+in https://newonlinecourses.science.psu.edu/stat501/node/256/ it is stated that
+"If b1 is negative, then r takes a negative sign."
+
+The result is pearson = -3/4
+============================
