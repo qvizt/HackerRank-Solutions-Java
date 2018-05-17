@@ -63,12 +63,7 @@ ORDER BY row_nr;
                            WHERE p IS NOT NULL
                           )
                 THEN 'Inner'
-                WHEN n NOT IN (
-                              SELECT p
-                                FROM bst
-                               WHERE p IS NOT NULL
-                              )
-                THEN 'Leaf'
+                ELSE 'Leaf'
              END
     FROM bst
 ORDER BY n;
