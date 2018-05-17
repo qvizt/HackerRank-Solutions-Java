@@ -10,7 +10,9 @@ directory that has a README with a more detailed overview for that language.
 * 30 Days of Code (Tutorials)
 * Java (Language Proficiency)
 
-[**SQL - Oracle (In Progress)**](/SQL)
+[**Python (In Progress)**](/Python)
+
+[**SQL - Oracle**](/SQL)
 
 ## Contact
 Question? Found an error? Or something else? Feel free to contact me via qvizt@wtnet.de
