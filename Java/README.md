@@ -1,7 +1,7 @@
 # HackerRank Solutions in Java
 This directory and its subfolders contain code written in Java to solve the challenges of [HackerRank](https://www.hackerrank.com/).
 
-Be aware that i try to stick as closely as possible to the code provided by the authors of the challenges. That means the code is  often not conform to the code conventions.
+Be aware that i try to stick as closely as possible to the code provided by the authors of the challenges. That means the code is often not conform to the code conventions.
 
 ## Overview
 What has been done so far.
