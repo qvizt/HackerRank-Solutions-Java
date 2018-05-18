@@ -1,5 +1,8 @@
 # Solution for Day 29 Bitwise AND
 
+# Taken from the editorial; the approach described in the example is too slow
+# in Python and the test cases fail due time restriction.
+
 # !/bin/python3
 
 import math
