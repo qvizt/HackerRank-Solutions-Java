@@ -12,6 +12,7 @@ directory that has a README with a more detailed overview for that language.
 
 [**Python (In Progress)**](/Python)
 * 30 Days of Code (Tutorials)
+* Python (Language Proficiency)
 
 [**SQL - Oracle**](/SQL)
 
