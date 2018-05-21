@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     for i in range(n):
         b = set(map(int, input().split()))
-        if not (a.issuperset(b) and len(b) < len(a)):
+        if not a > b:
             is_strict = False
 
     print(is_strict)
