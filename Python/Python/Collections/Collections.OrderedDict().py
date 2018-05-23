@@ -9,8 +9,8 @@ if __name__ == '__main__':
 
     for i in range(n):
         data = input().split()
-        item_name = str(" ".join(data[0:len(data) - 1]))
-        net_price = int(data[len(data) - 1])
+        item_name = str(" ".join(data[0:-1]))
+        net_price = int(data[-1])
 
         if ordered_dictionary.get(item_name):
             ordered_dictionary[item_name] += net_price
