@@ -9,7 +9,7 @@ What has been solved so far.
 |Domain|Status|
 |---|---|
 |[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Complete|
-|[Python (Language Proficiency)](Python)|Python Functionals done|
+|[Python (Language Proficiency)](Python)|Regex and Parsing done|
 
 ## Miscellaneous
 Solutions are written using Python 3.6.5 and PyCharm.
