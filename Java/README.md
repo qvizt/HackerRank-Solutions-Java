@@ -11,6 +11,8 @@ What has been done so far.
 |[10 Days of Statistics (Tutorials)](10%20Days%20of%20Statistics)|Complete|
 |[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Complete|
 |[Java (Language Proficiency)](Java)|Complete|
+|[Algorithms (Problem Solving)](Algorithms)|In Progress|
+
 
 ## Miscellaneous
 Solutions are written using Java 8 and Eclipse Oxygen.
