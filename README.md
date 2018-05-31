@@ -8,10 +8,12 @@ directory that has a README with a more detailed overview for that language.
 [**Java (In Progress)**](/Java)
 * 10 Days of Statistics (Tutorials)
 * 30 Days of Code (Tutorials)
+* Algorithms (Problem Solving)
 * Java (Language Proficiency)
 
 [**Python (In Progress)**](/Python)
 * 30 Days of Code (Tutorials)
+* Algorithms (Problem Solving)
 * Python (Language Proficiency)
 
 [**SQL - Oracle**](/SQL)
