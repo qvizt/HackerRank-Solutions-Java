@@ -10,7 +10,7 @@ What has been solved so far.
 |---|---|
 |[30 Days of Code (Tutorials)](30%20Days%20of%20Code)|Complete|
 |[Python (Language Proficiency)](Python)|Complete|
-|[Algorithms (Problem Solving)](Algorithms)|In Progress|
+|[Algorithms (Problem Solving)](Algorithms)|Warmup done|
 
 ## Miscellaneous
 Solutions are written using Python 3.6.5 and PyCharm.
