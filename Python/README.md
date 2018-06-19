@@ -1,11 +1,11 @@
 # HackerRank Solutions in Python
 The Python files in this directory including subfolders contain code to solve the challenges of [HackerRank](https://www.hackerrank.com/).
 
-**Since 19.06.2018**
+**Since 19.06.2018**  
 Restructuring / transforming the code provided by the authors of the challenges or by HackerRank in my solutions, because the provided code is somewhat messy and it does not feel right anymore to stick closely to it.
 
 
-**Until 18.06.2018**
+**Until 18.06.2018**  
 Be aware that i try to stick as closely as possible to the code provided by the authors of the challenges. That means the code is often not conform to the code conventions.
 
 ## Overview
