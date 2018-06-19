@@ -5,7 +5,7 @@ This repository contains code to solve the challenges of [HackerRank](https://ww
 Summary about the languages and the domains. Click on a language's name to visit the corresponding
 directory that has a README with a more detailed overview for that language.
 
-[**Java (In Progress)**](/Java)
+[**Java**](/Java)
 * 10 Days of Statistics (Tutorials)
 * 30 Days of Code (Tutorials)
 * Algorithms (Problem Solving)
