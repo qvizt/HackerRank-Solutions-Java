@@ -12,7 +12,7 @@ def rankings(alice_scores, scores):
 
     for a in alice_scores:
         if scores and not a >= scores[len(scores) - 1]:
-            if a < scores[0] and current_index == 0:
+            if a < scores[0]:
                 result.append(len(scores) + 1)
             else:
                 for i in range(current_index, len(scores) - 1):

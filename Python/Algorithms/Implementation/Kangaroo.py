@@ -2,8 +2,6 @@
 
 
 def meet(x1, v1, x2, v2):
-    result = "NO"
-
     if x1 > x2:
         distance = x1 - x2
         progress = v2 - v1
@@ -12,9 +10,9 @@ def meet(x1, v1, x2, v2):
         progress = v1 - v2
 
     if progress > 0 and distance % progress == 0:
-        result = "YES"
+        return "YES"
 
-    return result
+    return "NO"
 
 
 if __name__ == '__main__':
