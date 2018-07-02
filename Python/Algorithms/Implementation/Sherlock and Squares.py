@@ -4,13 +4,10 @@ import math
 
 def count_squares(lower_bound, upper_bound):
     count = 0
-    lower_bound = math.sqrt(lower_bound)
+    lower_bound = math.ceil(math.sqrt(lower_bound))
     upper_bound = int(math.sqrt(upper_bound))
 
-    if lower_bound.is_integer():
-        count += 1
-
-    count += upper_bound - int(lower_bound)
+    count += upper_bound - int(lower_bound) + 1
 
     return count
 

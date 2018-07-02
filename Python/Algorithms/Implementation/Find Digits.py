@@ -8,11 +8,8 @@ def count_divisors(nr_string):
     for c in nr_string:
         d = int(c)
 
-        try:
-            if not nr % d:
-                count += 1
-        except ZeroDivisionError:
-            continue
+        if d and not nr % d:
+            count += 1
 
     return count
 
