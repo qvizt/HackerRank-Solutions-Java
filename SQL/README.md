@@ -1,19 +1,18 @@
 # HackerRank SQL Solutions
-This directory contains several Markdown (.md) files with code to solve the challenges of [HackerRank's SQL Domain](https://www.hackerrank.com/domains/sql) .
+This directory and its subdirectories contain several Markdown (.md) files with code to solve the challenges of [HackerRank's SQL Domain](https://www.hackerrank.com/domains/sql) .
 
-Solutions are written by using the editor provided by the website and the SQL dialect is set to Oracle.
+Solutions are written by using the editor provided HackerRank and the SQL dialects are MS SQL Server and Oracle
 
 ## Overview
-Click on the name of a subdomain to visit the corresponding Markdown file that contains the solutions of the selected subdomain.
 
-|Subdomain|Status|
-|--------|--------|
-|[Advanced Join](Advanced%20Join.md)|Complete|
-|[Advanced Select](Advanced%20Select.md)|Complete|
-|[Aggregation](Aggregation.md)|Complete|
-|[Alternative Queries](Alternative%20Queries)|Complete|
-|[Basic Join](Basic%20Join.md)|Complete|
-|[Basic Select](Basic%20Select.md)|Complete|
+|Subdomain|MS SQL Server Progress|Oracle - Progress|
+|--------|--------|--------|
+|Advanced Join|-|[Complete](Oracle/Advanced%20Join.md)|
+|Advanced Select|-|[Complete](Oracle/Advanced%20Select.md)|
+|Aggregation|-|[Complete](Oracle/Aggregation.md)|
+|Alternative Queries|-|[Complete](Oracle/Alternative%20Queries)|
+|Basic Join|[WIP](MS%20SQL%20Server/Basic%20Join.md)|[Complete](Oracle/Basic%20Join.md)|
+|Basic Select|[Complete](MS%20SQL%20Server/Basic%20Select.md)|[Complete](Oracle/Basic%20Select.md)|
 
 ## Contact
 Question? Found an error? Or something else? Feel free to contact me via qvizt@wtnet.de
