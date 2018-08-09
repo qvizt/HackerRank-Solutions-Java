@@ -10,7 +10,7 @@ Solutions are written by using the editor provided HackerRank and the SQL dialec
 |Advanced Join|-|[Complete](Oracle/Advanced%20Join.md)|
 |Advanced Select|-|[Complete](Oracle/Advanced%20Select.md)|
 |Aggregation|-|[Complete](Oracle/Aggregation.md)|
-|Alternative Queries|-|[Complete](Oracle/Alternative%20Queries)|
+|Alternative Queries|-|[Complete](Oracle/Alternative%20Queries.md)|
 |Basic Join|[WIP](MS%20SQL%20Server/Basic%20Join.md)|[Complete](Oracle/Basic%20Join.md)|
 |Basic Select|[Complete](MS%20SQL%20Server/Basic%20Select.md)|[Complete](Oracle/Basic%20Select.md)|
 
