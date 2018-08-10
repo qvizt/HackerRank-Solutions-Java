@@ -60,11 +60,11 @@ ORDER BY summary.count_max_score DESC, hackers.hacker_id ASC;
                 SELECT wands.code AS code, MIN(wands.coins_needed) AS min_coins, wands_property.age AS age,
                        wands.power AS power
                   FROM wands
-			           JOIN wands_property ON wands.code = wands_property.code
-			     WHERE wands_property.is_evil = 0
+                       JOIN wands_property ON wands.code = wands_property.code
+                 WHERE wands_property.is_evil = 0
               GROUP BY wands.code, wands_property.age, wands.power
               ) AS summary ON wands.code = summary.code
-			              AND wands.coins_needed = summary.min_coins
+                          AND wands.coins_needed = summary.min_coins
                           AND wands.power = summary.power
 ORDER BY summary.power DESC, summary.age DESC;
 ```

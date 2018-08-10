@@ -51,8 +51,8 @@ SELECT CAST(CEILING(AVG(CAST(salary AS float)) - AVG(CAST(REPLACE(salary, 0, '')
 ```SQL
 SELECT TOP(1) earnings, COUNT(*)
   FROM (
-         SELECT (months * salary) AS earnings
-           FROM employee
+       SELECT (months * salary) AS earnings
+         FROM employee
        ) AS summary
 GROUP BY earnings
 ORDER BY earnings DESC;
