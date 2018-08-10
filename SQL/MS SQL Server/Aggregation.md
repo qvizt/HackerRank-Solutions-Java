@@ -69,7 +69,7 @@ SELECT CAST(SUM(lat_n) AS NUMERIC(10,2)), CAST(SUM(long_w) AS NUMERIC(10,2))
 SELECT CAST(SUM(lat_n) AS NUMERIC(10,4))
   FROM station
  WHERE lat_n BETWEEN 38.7881 AND 137.2344;
-
+ 
 /*
 Greater than 38.7880 and less than 137.2345 "translates"
 as 38.7881 and 137.2344 in this context because
@@ -92,7 +92,7 @@ SELECT CAST(long_w AS NUMERIC(10,4))
                SELECT MAX(lat_n)
                  FROM station
                 WHERE lat_n < 137.2345
-			   );
+               );
 ```
 
 #### Weather Observation Station 16
@@ -110,17 +110,17 @@ SELECT CAST(long_w AS NUMERIC(10,4))
                SELECT MIN(lat_n)
                  FROM station
                 WHERE lat_n > 38.7780
-			   );
+               );
 ```
 
 #### Weather Observation Station 18
 ```SQL
 SELECT CAST(
            ABS(p1.a - p2.c)
-		   +
-		   ABS(p1.b - p2.d)
-		   AS NUMERIC(10,4)
-		   )
+           +
+           ABS(p1.b - p2.d)
+           AS NUMERIC(10,4)
+           )
   FROM (
        SELECT MIN(lat_n) AS a, MIN(long_w) AS b
          FROM station
@@ -135,12 +135,12 @@ SELECT CAST(
 ```SQL
 SELECT CAST(
            SQRT(
-		       POWER(p1.b - p1.a, 2)
-			   +
-			   POWER(p2.d - p2.c, 2)
-			   )
-		   AS NUMERIC(10,4)
-		   )
+               POWER(p1.b - p1.a, 2)
+               +
+               POWER(p2.d - p2.c, 2)
+               )
+           AS NUMERIC(10,4)
+           )
   FROM (
        SELECT MIN(lat_n) AS a, MAX(lat_n) AS b
          FROM station
