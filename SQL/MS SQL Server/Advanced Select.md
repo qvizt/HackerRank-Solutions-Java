@@ -67,10 +67,30 @@ SELECT *
 
 #### Binary Tree Nodes
 ```SQL
-
+  SELECT CASE
+             WHEN p IS NULL
+             THEN CAST(n AS VARCHAR) + ' Root'
+             WHEN n IN (
+                       SELECT p
+                         FROM bst
+                        WHERE p IS NOT NULL
+                       )
+             THEN CAST(n AS VARCHAR) + ' Inner'
+             ELSE CAST(n AS VARCHAR) + ' Leaf'
+          END
+    FROM bst
+ORDER BY n;
 ```
 
 #### New Companies
 ```SQL
-
+  SELECT c.company_code, c.founder, COUNT(DISTINCT l.lead_manager_code), COUNT(DISTINCT s.senior_manager_code),
+         COUNT(DISTINCT m.manager_code), COUNT(DISTINCT e.employee_code)
+    FROM company AS c
+         JOIN lead_manager AS l ON c.company_code = l.company_code
+         JOIN senior_manager AS s ON c.company_code = s.company_code
+         JOIN manager AS m ON c.company_code = m.company_code
+         JOIN employee AS e ON c.company_code = e.company_code
+GROUP BY c.company_code, c.founder
+ORDER BY c.company_code ASC;
 ```
