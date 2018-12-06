@@ -1,5 +1,6 @@
 # Solution for Separate the Numbers
 
+
 def is_beautiful(s):
     length = len(s)
 
