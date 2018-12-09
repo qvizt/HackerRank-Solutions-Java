@@ -26,5 +26,5 @@ if __name__ == '__main__':
     input()  # skip size
     numbers = list(map(int, input().split()))
 
-    result = partition(numbers)
+    partition(numbers)
     print(' '.join(map(str, numbers)))
