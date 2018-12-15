@@ -1,4 +1,6 @@
 # Solution for Quicksort 1 - Partition
+# This version does not use three lists
+# to partition the numbers
 
 
 def partition(numbers):
