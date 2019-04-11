@@ -16,7 +16,7 @@ directory that has a README with a more detailed overview for that language.
 * Algorithms (Problem Solving)
 * Python (Language Proficiency)
 
-[**SQL (In Progress)**](/SQL)
+[**SQL**](/SQL)
 * MS SQL Server
 * Oracle
 
