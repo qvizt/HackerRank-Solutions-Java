@@ -1,4 +1,6 @@
 # Solution for Ice Cream Parlor
+#
+# NOTE: This is not a solution based on "Binary Search"
 
 def get_flavors(money, cost_flavors):
     result = []
