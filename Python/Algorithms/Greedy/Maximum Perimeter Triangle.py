@@ -1,4 +1,10 @@
 # Solution for Maximum Perimeter Triangle
+#
+# Useful sources:
+# [1] https://de.wikipedia.org/wiki/Dreieck#SSS-Fall
+# [2] https://de.wikipedia.org/wiki/Radiant_(Einheit)
+# [3] https://en.wikipedia.org/wiki/Degeneracy_(mathematics)#Triangle
+
 from math import acos, pi
 
 
@@ -17,12 +23,14 @@ def get_maximum_perimeter_triangle(sticks):
             gamma = acos((c * c - a * a - b * b) / (-2 * a * b)) * 180 / pi
             angle = 180
             if alpha == angle or beta == angle or gamma == angle:
+                # skip 180 degree angle solutions (= degenerated triangle)
                 pass
             else:
                 current_triangle = (c, b, a)
                 if current_triangle > maximum_triangle:
                     maximum_triangle = current_triangle
         except Exception:
+            # skip solutions with undefined angles
             pass
 
     if maximum_triangle[0] == -1:
