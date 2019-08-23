@@ -7,7 +7,7 @@ Solutions are written by using the editor provided by HackerRank and the SQL dia
 
 |Subdomain|MS SQL Server - Progress|Oracle - Progress|
 |--------|--------|--------|
-|Advanced Join|2 of 5|[Complete](Oracle/Advanced%20Join.md)|
+|Advanced Join|[3 of 5](MS%20SQL%20Server/Advanced%20Join.md)|[Complete](Oracle/Advanced%20Join.md)|
 |Advanced Select|[Complete](MS%20SQL%20Server/Advanced%20Select.md)|[Complete](Oracle/Advanced%20Select.md)|
 |Aggregation|[Complete](MS%20SQL%20Server/Aggregation.md)|[Complete](Oracle/Aggregation.md)|
 |Alternative Queries|-|[Complete](Oracle/Alternative%20Queries.md)|
