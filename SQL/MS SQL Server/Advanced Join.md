@@ -48,7 +48,14 @@ ORDER BY friend_package.salary
 
 #### Symmetric Pairs
 ```SQL
-to be done
+  SELECT f1.x, f1.y
+    FROM functions f1
+         JOIN functions f2 ON f1.x = f2.y
+                              AND f2.x = f1.y
+GROUP BY f1.x, f1.y
+  HAVING f1.x < f1.y
+      OR COUNT(*) > 1
+ORDER BY f1.x ASC;
 ```
 
 #### Interviews
